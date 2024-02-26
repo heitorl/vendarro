@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.ctn-header {
+  padding: 10px 60px 0 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ctn-header img {
+  width: 50px;
+  height: 50px;
+}
+
+main {
+  padding: 50px 60px 0 60px;
+}
+
+main .ctn-input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 2px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+main .ctn-input input {
+  margin-left: 10px;
+  padding: 10px;
+  background: transparent;
+  align-items: center;
+  border: none;
+  flex: 1;
+}
+main .ctn-input input:focus {
+  outline: none;
+  border-color: transparent;
+}
+
+.ctn-input .fa {
+  font-size: 24px;
+  cursor: pointer;
+  padding-right: 30px;
+}
+
+section {
+  padding-top: 40px;
+}
+
+#car-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+@media screen and (max-width: 1560px) {
+  #car-list {
+    justify-content: center;
+  }
+}
+
+#car-list li {
+  list-style: none;
+  width: 262px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  gap: 6px;
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+#car-list li .ctn-img {
+  margin-top: 10px;
+}
+#car-list li .ctn-img img {
+  width: 230px;
+  height: 186px;
+  border-radius: 10px;
+}
+
+#car-list li .ctn-info {
+  font-size: 24px;
+  width: 215px;
+  height: 100%;
+}
+
+li .ctn-info .car-price {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.ctn-modal {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+
+  max-width: 564px;
+  border-radius: 5px;
+}
+
+.ctn-modal .ctn-img {
+  display: flex;
+  justify-content: center;
+}
+
+.ctn-modal .ctn-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.ctn-modal .ctn-info {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ctn-modal .ctn-description {
+  padding: 12px;
+  font-size: 12px;
+}
+
+.ctn-modal button {
+  background-color: #fc6500;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffff;
+}

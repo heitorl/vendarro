@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <title>Vendarro LTDA</title>
+  </head>
+  <body>
+    <header>
+      <div class="ctn-header">
+        <img src="./assets/logo.png" alt="logo" />
+        <h2>Vendarro LTDA</h2>
+      </div>
+    </header>
+    <main>
+      <div class="ctn-input">
+        <input
+          id="searchInput"
+          placeholder="Digite alguma coisa aqui..."
+          oninput="searchCars()"
+        />
+        <i class="fa fa-search"></i>
+      </div>
+
+      <section>
+        <ul id="car-list"></ul>
+        <div id="modal" class="modal">
+          <div class="ctn-modal">
+            <div id="content-modal"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
